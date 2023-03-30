@@ -2,10 +2,17 @@ class alumno:
     def __init__(self,nombre,nota):
         self.nombre = nombre
         self.nota = nota
-    def __str__(self):
-        return f"El alumno  {self.nombre} se ha creado con exito"
+        print(f"El alumno ,de nombre {self.nombre}, se ha creado con éxito")
+    
     def __cali__(self):
         if self.nota>=5 and self.nota<=10:
             return f"El alumno {self.nombre} ha aprobado con un {self.nota}"
         elif self.nota<5 and self.nota>=0:
             return f"El alumno {self.nombre} ha suspendido con un {self.nota}"
+
+alumno1=alumno("Juan",5)
+print(alumno1.__cali__())
+alumno2=alumno("Pedro",2)
+print(alumno2.__cali__())
+alumno3=alumno("Maria",8)
+print(alumno3.__cali__())
