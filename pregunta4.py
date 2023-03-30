@@ -9,7 +9,7 @@ class alumno:
             return f"El alumno {self.nombre} ha aprobado con un {self.nota}"
         elif self.nota<5 and self.nota>=0:
             return f"El alumno {self.nombre} ha suspendido con un {self.nota}"
-    
+    #Implementa el método str
     def __str__(self):
         return f"Nombre:{self.nombre} | Nota: {self.nota}"
 
